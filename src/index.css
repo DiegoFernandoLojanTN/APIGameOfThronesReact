@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url('https://www.mundodeportivo.com/alfabeta/hero/2019/05/jon-snow-reigns.jpg?width=768&aspect_ratio=16:9&format=nowebp'), linear-gradient(to bottom right, #333, #000);
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  font-family: 'Cinzel Decorative', sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 3); /* Aumentado el valor de opacidad */
+}
+
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+  }
+}
+
+#root {
+  width: 100%;
+}
+
+.titulo-logo {
+  width: 200px; /* Ajusta el ancho según sea necesario */
+  display: block;
+  margin: 1rem auto; /* Ajusta el margen para centrar la imagen */
+}
+
+.titulo-logo {
+  width: 500px; /* Ajusta el ancho según sea necesario */
+  display: block;
+  margin: 1rem auto; /* Ajusta el margen para centrar la imagen */
+  position: absolute; /* Posición absoluta */
+  top: 10%; /* Alinea la mitad superior de la imagen */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Centra perfectamente */
+  z-index: 1; /* Asegura que la imagen esté sobre el fondo */
+}
